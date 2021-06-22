@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middleman | Portal Login</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles/default.css">
+
+    <!--jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <section class="login">
+      <div class="header">
+          <h1>Middleman </h1>
+          <p>Taking You & Your Parcels Everywhere.</p>
+          <div class="hero-btn">
+            <img src="../../images/delivery.svg" alt="">
+            <img style="background-color: #D48309;" src="images/taxi.png" alt="">
+          </div>
+      </div>
+      <div class="login-form">
+          <form action="./pages/deliver.html">
+            <p class="err-msg"></p>
+            <div class="input">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Username" required>
+          </div>
+
+          <div class="input">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Password" required >
+          </div>
+
+          <a href="./pages/deliver.html" style="width: 100%;"><button id="login-btn">Login</button></a>
+          </form>
+          
+      </div>
+  </section>
+
+  <section class="footer">
+    
+    <div class="f-wrapper">
+      <h2>Social links</h2>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/middlemanafrica"><img style="background-color: white;" src="../../images/instagram.svg" alt=""><p>@middlemanafrica</p></a></li>
+        <li><a href="https://www.facebook.com/middlemanafrica/?__xts__[facebook]="><img src="../../images/facebook.png" alt=""><p>@middlemanafrica</p></a></li>
+        <li><a href=""><img src="../../images/twitter.png" alt=""><p>@middlemanafrica</p></a></li>
+      </ul>
+    </div>
+
+    <div class="f-wrapper">
+      <h2>Contact Us</h2>
+      <ul class="social-links">
+        <li><p><img src="../../images/telephone.svg" alt="">Phone</p><p>+263 779305605</p></li>
+        <li><p><img src="../../images/whatsapp.png" alt="">Whatsapp</p><p>+263 779305605</p></li>
+        <li><p><img src="../../images/email.svg" alt="">Email</p><p>middlemanafrica@gmail.com</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="licence">
+    <p>Author:</p><p>Kristien Nyamutsaka</p>
+  </section>
+  <script src="./js/main.js"></script>
+</body>
+</html>

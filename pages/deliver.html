@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middleman | Deliveries </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <section class="nav">
+        <div class="nav-wrapper">
+        <div class="logo-wrapper">
+            <a href="deliver.html"><img src="../images/logo.png" alt=""></a>
+        </div>
+        <ul class="nav-items">
+            <li><a href="about.html">About</a></li>
+            <li><a href="driver.html">Drivers</a></li>
+            <li><a href="manage.html">Manage</a></li>
+        </ul>
+    </div>
+    </section>
+
+    <section class="hero">
+    <h1>Middleman Deliveries</h1>
+    <p>From the World, To Your Doorstep, Vice Versa</p>
+    <div class="hero-btn">
+        <a href="./deliver.html"><img style="background-color: #D48309;" src="../images/delivery.svg" alt=""></a>
+        <a href="./escort.html"><img src="../images/taxi.png" alt=""></a>
+    </div>
+  </section>
+
+    <section class="order">
+    <div class="form">
+      <legend>Delivery Request</legend>
+      <p>fill in form to complete delivery</p>
+
+      <form action="api/request/add" method="POST">
+        <div class="input">
+          <label for="sender">Sender</label>
+          <input id="sender" name="sender" type="text" placeholder="Supplier name" required>
+        </div>
+
+        <div class="input">
+          <label for="receiver">Receipient</label>
+          <input id="receiver" name="receiver" type="text" placeholder="Customer name">
+        </div>
+
+        <div class="input">
+          <label for="origin">Origin</label>
+          <input id="origin" name="origin" type="text" placeholder="Pick-up location">
+        </div>
+
+        <div class="input">
+          <label for="destination">Destination</label>
+          <input id="destination" name="destination" type="text" placeholder="Drop-off location">
+        </div>
+
+        <div class="input">
+          <label for="contact">Contact</label>
+          <input id="contact" name="contact" type="text" placeholder="Mobile No.">
+        </div>
+
+        <div class="input">
+          <label for="driver">Driver</label>
+          <input id="driver" name="driver" type="text" placeholder="Driver name">
+        </div>
+
+        <div class="input">
+          <label for="price">Price</label>
+          <input id="price" name="price" type="text" placeholder="5, 6 or 7">
+        </div>
+         <button id="submit-btn" type="submit">Submit</button>
+      </form>
+     
+    </div>
+  </section>
+
+    <section class="footer">
+    
+    <div class="f-wrapper">
+      <h2>Social links</h2>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/middlemanafrica/"><img style="background-color: white;" src="../images/instagram.svg" alt=""><p>@middlemanafrica</p></a></li>
+        <li><a href="https://www.facebook.com/middlemanafrica/?__xts__[facebook]="><img src="../images/facebook.png" alt=""><p>@middlemanafrica</p></a></li>
+        <li><a href=""><img src="../images/twitter.png" alt=""><p>@middlemanafrica</p></a></li>
+      </ul>
+    </div>
+
+    <div class="f-wrapper">
+      <h2>Useful information</h2>
+      <ul class="social-links">
+        <li><a href="/about">About</a></li>
+        <li><a href="/drivers">Drivers</a></li>
+        <li><a href="/about">Delivery Info</a></li>
+      </ul>
+    </div>
+
+    <div class="f-wrapper">
+      <h2>Contact Us</h2>
+      <ul class="social-links">
+        <li><p><img src="../images/telephone.svg" alt="">Phone</p><p>+263 779305605</p></li>
+        <li><p><img src="../images/whatsapp.png" alt="">Whatsapp</p><p>+263 779305605</p></li>
+        <li><p><img src="../images/email.svg" alt="">Email</p><p>middlemanafrica@gmail.com</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="licence">
+    <p>Author:</p><p>Kristien Nyamutsaka</p>
+  </section>
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
