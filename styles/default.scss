@@ -133,6 +133,15 @@ p{
     }
 }
 
+.advert{
+    @include allCentre();
+    border: 2px solid white;
+    padding: 5em;
+    text-align: center;
+    margin: 5em 5em;
+
+}
+
 .hero{
     height: 40vh;
     @include allCentre();
